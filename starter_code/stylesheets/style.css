@@ -8,3 +8,216 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+body {
+    background-color: #540B51;
+    margin: 0;
+    padding: 0;
+    font-weight:normal;
+}
+
+#nav-items {
+    display:none;
+}
+
+/* for iteration 3
+underneath slack logo, li elements
+items: product, solutions, resources, pricing
+to make items invisible - display:none 
+to make items visible again - display:block */
+
+nav {
+    /*width:100vh;*/
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#slack-logo, #top-icons {
+    height: 40px;
+    margin: 20px;
+    padding-top: 10px;
+}
+
+h1 {
+    color: #F3EAE2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5em;
+    text-align: center;
+    padding: 20px;
+    font-weight: normal;
+}
+
+span:only-child{
+    color: orange;
+    font-size: 1em;
+}
+
+
+header div p {
+    color:white;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+#container-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+.container-buttons > button {
+    width: 97.5%;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    height: 8vh;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 5px 10px 5px 10px; /* top right bottom left*/
+}
+
+#email-button {
+    background-color: white;
+    color: #540B51;
+}
+
+#google-button {
+    background-color: #4285F4;
+    color:white;
+    display:flex;
+    justify-content: space-between; /*aligns items to the start of the button */
+    align-items: center; /* aligns items vertically in the center */
+}
+
+#google-image {
+    height: 5vh;
+    background-color: white;
+    margin-right:-25px;
+    margin-left:10px;
+}
+
+#slack-screenshot {
+    margin-top:50px;
+}
+
+#section-companies {
+    background-color:#F3EAE2;
+    padding-bottom:20px;
+}
+
+#section-companies:first-child {
+    padding-top: 30px;
+    text-align:center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#container-companies {
+    display:flex;
+    flex-wrap:wrap;
+    margin:20px;
+    justify-content:center;
+
+}
+
+#container-companies img {
+    height:50px;
+    padding:20px;
+}
+
+#section-teams {
+    background-color:white;
+    padding:40px;
+    text-align:center;
+}
+
+h3 {
+    color:#540B51;
+    font-size:2em;
+}
+
+#section-teams p {
+    color: black;
+    font-size: 1.5em;
+}
+
+ul {
+    list-style-type:none;
+}
+
+.percentage-text li p span {
+    color:#540B51;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+.percentage-text li p:not(span) {
+    font-weight: bold;
+}
+
+
+#section-HQ h3 {
+    margin-top:50px;
+    color:white;
+    text-align:center;
+}
+
+#final-buttons button:last-child {
+    background-color:#540B51;
+    color:white;
+    border: 1px solid white;
+    margin-bottom:50px;
+}
+
+#footer {
+    background-color:white;
+
+}
+
+#footer ul *{
+    font-weight:bold;
+    margin: 10px 0;
+}
+
+#footer ul li:last-child {
+    color:#2E71A6;
+}
+
+hr {
+    margin: 40px 20px 40px 20px;
+    border-color:#F3EAE2;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.icons img {
+    padding-right:10px;
+}
+
+#social-media {
+    display: flex;
+}
+
+#social-media li {
+    justify-content: space-between;
+}
+
+/*for later iterations*/
+@media(min-width:768px) and (max-width:1024px) {
+    #nav-items {
+        display: block;
+    }
+}
+
