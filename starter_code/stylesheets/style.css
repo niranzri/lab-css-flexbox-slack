@@ -27,7 +27,6 @@ nav {
 
 #nav-items {
     display:none;
-    background-color: transparent;
 }
 
 #slack-logo, #top-icons {
@@ -36,39 +35,45 @@ nav {
     padding-top:10px;
 }
 
-
-h1 {
-    color:#F3EAE2;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:3.5em;
-    text-align:center;
-    padding:20px;
-    font-weight:normal;
-}
-
-span:only-child{
-    color:orange;
-    font-size:1em;
+#top-icons button {
+    background-color:#540B51;
+    vertical-align: middle;
 }
 
 
-header div p {
+header {
     color:white;
     text-align:center;
     font-size:1.5em;
     margin-bottom:40px;
 }
 
-#container-buttons {
+h1 {
+    color:#F3EAE2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:2em;
+    text-align:center;
+    padding:20px;
+    font-weight:normal;
+}
+
+header span:only-child{
+    color:orange;
+    font-size:1em;
+    text-align:center;
+}
+
+.container-buttons {
     display:flex;
     flex-direction:column;
     justify-content:space-around;
     align-content:space-between;
+    font-size: 0.6em;
 }
 
-.container-buttons > button {
+.container-buttons button {
     width:97.5%;
     border:none;
     border-radius:10px;
@@ -93,6 +98,7 @@ header div p {
     align-items:center; /* aligns items vertically in the center */
 }
 
+
 #google-image {
     height: 5vh;
     background-color: white;
@@ -102,10 +108,10 @@ header div p {
 
 #slack-screenshot {
     margin-top:50px;
-    width:100vw;
     position:relative;
     left:50%;
     transform:translateX(-50%);
+    max-width: calc(100vw - 10px);
 }
 
 #section-companies {
@@ -228,6 +234,11 @@ small {
 @media(min-width:768px) and (max-width:1024px){
     header {
         display:flex;
+        background-image: url(../images/background-signup.png);
+        background-size: cover;
+        background-position:center;
+        background-image:no-repeat;
+        padding:10px;
     }
 
     .header div:first-child {
@@ -239,11 +250,15 @@ small {
     }
 
     #slack-screenshot {
-        width:500px;
+        width: 400px;
     }
 
     #google-image {
-        margin-right:35px;
+        margin-right:50px;
+    }
+
+    #google-button span {
+        padding-left:40px;
     }
 
     #container-companies {
@@ -280,12 +295,31 @@ small {
 }
 
 @media(min-width:1024px) and (max-width:1440px){
+
+    nav {
+        justify-content:center;
+    }
+
+    .slack-nav-items {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        margin-right: 100px;
+    }
+
     #nav-items {
-        display: block;
+        display:flex;
+        flex-wrap:nowrap;
+        gap: 100px;
     }
 
     #slack-screenshot {
         width:900px;
+    }
+
+    a {
+        color:white;
+        text-decoration:none;
     }
 
 }
