@@ -9,10 +9,14 @@ links blue: #2E71A6
 footer links grey: #454245
 */
 
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #540B51;
-    margin:0;
-    padding:0;
     font-family: sans-serif;
     font-weight:normal;
 }
@@ -45,7 +49,7 @@ header {
     color:white;
     text-align:center;
     font-size:1.5em;
-    margin-bottom:40px;
+    margin:0 0 40px 0;
 }
 
 h1 {
@@ -111,7 +115,7 @@ header span:only-child{
     position:relative;
     left:50%;
     transform:translateX(-50%);
-    max-width: calc(100vw - 10px);
+    width: 100vw;
 }
 
 #section-companies {
@@ -296,6 +300,15 @@ small {
 
 @media(min-width:1024px) and (max-width:1440px){
 
+    header {
+        display:flex;
+        justify-content: center;
+        background-image: url(../images/background-signup.png);
+        background-size: cover;
+        padding-left:10px;
+    }
+
+
     nav {
         justify-content:center;
     }
@@ -304,7 +317,7 @@ small {
         display:flex;
         justify-content:center;
         align-items:center;
-        margin-right: 100px;
+        margin-right: 80px;
     }
 
     #nav-items {
@@ -314,12 +327,54 @@ small {
     }
 
     #slack-screenshot {
-        width:900px;
+        margin-left:50px;
+        width:40vw;
     }
 
     a {
         color:white;
         text-decoration:none;
+    }
+
+    #google-image {
+        margin-right:50px;
+    }
+
+    #google-button span {
+        padding-left:40px;
+    }
+
+    #container-companies {
+        flex-wrap:nowrap;
+    }
+
+    #container-companies img {
+        height:40px;
+        padding:10px;
+    }
+
+    .percentage-text {
+        display:flex;
+    }
+
+    .percentage-text p {
+        text-align:left;
+        font-size:0.5em;
+    }
+
+    .above-social-media{
+        display:flex;
+        flex-wrap:nowrap;
+        align-items:center;
+        gap:60px;
+    }
+
+    footer ul li {
+        padding: 0 7px 0 7px;
+    }
+
+    .icons img {
+        padding-right:3px;
     }
 
 }
